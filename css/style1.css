@@ -1,19 +1,13 @@
-*{
-  font-family: Roboto,Segoe UI Light, sans-serif;
- -moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	 box-sizing: border-box; 
-
-	margin:0 ;
-	padding: 0px;
-}
-/* *::before,
-		*::after{
-			box-sizing:inherit;
-		} */
 
 
-
+    *{
+      font-family: Segoe UI Light, sans-serif;
+     
+      /* box-sizing: border-box; */
+    
+      margin:0 ;
+      padding: 0px;
+    }
 
 			nav ul{
 				flex-direction:row;
@@ -397,6 +391,9 @@ li:hover{
   nav ul{
     flex-direction:column;
     background: #131418;
+
+
+
   }
 
 .col{
@@ -404,11 +401,7 @@ li:hover{
   flex-direction:column;
 }
 
-h1{
 
-margin-bottom: 10px;
-
-}
 
   .col{
 		float: middle;
@@ -423,7 +416,7 @@ margin-bottom: 10px;
 		width: 100%;
   }
   .faa{
-    margin-bottom: 90px;
+    margin-bottom: 50px;
     border: none;
     text-align: center;
    font-size: 240%;
@@ -432,12 +425,18 @@ margin-bottom: 10px;
   }
 
 .btn{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
   align-items: center;
   justify-content: center
 }
+section.banner{
+  height: 130vh;
+}
 
+section.service{
+  height: auto
+}
   .voca{
     text-align: center;
     align-items: center;
