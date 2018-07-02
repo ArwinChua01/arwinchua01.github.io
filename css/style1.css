@@ -1,6 +1,18 @@
 *{
-  font-family: Segoe UI Light, sans-serif;
+  font-family: Roboto,Segoe UI Light, sans-serif;
+ 
+	/* box-sizing: border-box; */
+
+	margin:0 ;
+	padding: 0px;
 }
+/* *::before,
+		*::after{
+			box-sizing:inherit;
+		} */
+
+
+
 
 			nav ul{
 				flex-direction:row;
@@ -18,11 +30,13 @@ nav>ul{
 			padding: 0px;
 			flex: 1;
 			margin: 0px;
-		}
+    }
+    
+    
     .wrapper
   {
-    height: 1690px;
-    margin: 0 ;
+    max-width: 1690px;
+			margin: 0 auto;
   }
 .acc{
 display: block;
@@ -42,33 +56,31 @@ display: block;
     		}
         nav{
         			display: flex;
-  background: black;
-        		}
-.section{
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-		section{
-			height: 100vh;
-			display: flex;
-		}
-.bgd-img{
-  background:
-  			linear-gradient(
-  				rgba(0,0,0,.7),
-  				rgba(0,0,0,.7)),
-  			url('../img/music.jpg');
-
-  			background-size:cover;
-  			color: white;
-
-}
+              background:
+              linear-gradient(
+                rgba(53, 180, 230, 0.7),
+                rgba(0, 0, 0, 0.3)),
+              url('../img/music.jpg');
+        }
 nav{
   flex-direction: row;
+}
 
+.color{
+  color: tomato;
+}
 
+.teal
+{
+  color: #17a2b8;
+}
+
+.fb{
+  color: #007bff;
+}
+
+.ig{
+  color: #ffc107;
 }
 
 nav>ul{
@@ -82,11 +94,186 @@ ul li{
   text-decoration: none;
 display: block;
 }
+           
+.section{
+  justify-content: justify;
+  text-align: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+list-style: none;
+color: white;
 
-.float-right{
-  float: right;
+}
+		section{
+			height: 100vh;
+			display: flex;
+    }
+    
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.50);
+  border-radius: 0.40rem;
+  margin: 20px;
+ 
+}
+ 
+.card-title {
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 576px) {
+  .card-deck {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .card-deck, .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+  }
+}
+   
+img {
+  max-width: 100%;
+  height: auto;
 }
 
+.bgd-img{
+  background:
+  			linear-gradient(
+  				rgba(0,0,0,.7),
+  				rgba(0,0,0,.7)),
+  			url('../img/music.jpg');
+
+  			background-size:cover;
+  			color: white;
+
+}
+.float-right{
+  float: right;
+
+}
+.primary{
+  background: crimson ;
+  color: white;
+  padding: 13px;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary:hover{
+  color: white;
+  background:#d95700;
+}
+
+.primary5{
+  background: darkcyan ;
+  color: white;
+  padding: 13px;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.primary5:hover{
+  color: white;
+  background: purple;
+}
+
+.primary1{
+  background: #d95700 ;
+  color: white;
+  padding: 13px;
+  border-radius: 5px;
+ 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.txt{
+  list-style: none;
+  text-decoration: none;
+  margin: 5px;
+}
+.primary1:hover{
+  color: white;
+  background: rebeccapurple;
+}
+
+
+.card-link:hover {
+  text-decoration: none;
+}
+
+.card-link + .card-link {
+  margin-left: 1.25rem;
+}
+.primary3{
+  background: seagreen ;
+  color: white;
+  padding: 13px;
+  border-radius: 5px;
+ 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.primary3:hover{
+  color: white;
+  background:darkgoldenrod;
+}
+
+
+.primary4{
+  background: slategray ;
+  color: white;
+  padding: 13px;
+  display: flex;
+  border-radius: 5px;
+ 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary4:hover{
+  color: white;
+  background:#d95700;
+}
     		.faa{
     			font-size: 300%;
     			margin-bottom: 20px;
@@ -119,13 +306,23 @@ display: block;
 			justify-content: center;
 			align-items: center;
 		}
-
+.highlights{
+  color: white;
+  background:  #e83e8c;
+  cursor: pointer;
+}
 .voca{
   text-align: center;
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
   
+}
+article{
+  margin-bottom: 40px;
+}
+.pointer{
+  cursor: pointer;
 }
 
 .centerized{
@@ -134,12 +331,15 @@ display: block;
   align-items: center;
 background: lightgray;
 padding: 20px;
+margin-bottom: 40px;
 }
+
 footer{
   background: black;
   color: white;
   text-align: center;
-  padding: auto;
+  padding: 15px;
+  margin-top: 30px;
 }
 
 .pink{
@@ -162,7 +362,7 @@ display: flex;
   border: 1px solid white;
   border-radius: 100px;
   background: transparent;
-  padding: 10px;
+  padding: 20px;
   color:  white;
 text-align: center;
 align-items: center;
@@ -171,6 +371,7 @@ margin-bottom: 50px;
 .btn:hover{
   color: white;
   background:  #e83e8c;
+  cursor: pointer;
 }
 
 
@@ -182,4 +383,70 @@ margin-bottom: 50px;
 li:hover{
   color: white;
   background:  #e83e8c;
+  cursor: pointer;
 }
+
+/* use media width for responsiveness */
+@media (max-width: 600px){
+  *{
+    display: flex;
+    flex-direction:column;
+  }
+
+  nav ul{
+    flex-direction:column;
+    background: #131418;
+  }
+
+.col{
+  display: flex;
+  flex-direction:column;
+}
+
+h1{
+
+margin-bottom: 10px;
+
+}
+
+  .col{
+		float: middle;
+	}
+	
+	.col.half{
+		width: 100%;
+	
+	}
+	
+	.col.third{
+		width: 100%;
+  }
+  .faa{
+    margin-bottom: 90px;
+    border: none;
+    text-align: center;
+   font-size: 240%;
+
+
+  }
+
+.btn{
+  margin-bottom: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center
+}
+
+  .voca{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+  }
+  .dark{
+    padding: 20px;
+    order:1;
+  }
+}
+
