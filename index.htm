@@ -4,95 +4,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style1.css">
-  <title>Music</title>
+  
   </head>
+  
   <body>
+
     <div class="wrapper">
       <nav>
         <ul>
-          <li><a href="#" >Home</a></li>
-            <li><a href="#" >Gallery</a></li>
-              <li><a href="#" >Team</a></li>
-                <li><a href="#" >About</a></li>
-                  <li><a href="#" >Testimonials</a></li>
-                    <li><a href="#" >Contact</a></li>
+          <li class="highlights"><a href="#" ><i class="fa fa-home"></i> Home</a></li>
+            <li onclick="showAlert()"><a href="#" ><i class="fa fa-file-image-o">  </i> Gallery</a></li>
+              <li id="alert" onclick="showAlert()"><a href="#" ><i class="fa fa-users"></i> Team</a></li>
+                <li id="alert" onclick="showAlert()"><a href="#" ><i class="fa fa-question"></i> About</a></li>
+                  <li id="alert" onclick="showAlert()"><a href="#" ><i class="fa fa-newspaper-o"></i> Testimonials</a></li>
+                    <li id="alert" onclick="showAlert()"><a href="#" ><i class="fa fa-phone"></i> Contact</a></li>
         </ul>
-        <h4 class="float-right acc"><a href="#" class="acc"  >Arwin Chua  <i class="fa fa-caret-down"></i></a></h4>
       </nav>
+
 <main>
   <section class="banner bgd-img">
   				<div class="tagline-padding" style="display: flex; flex-direction: column;">
-  					<h1 class="faa" style="font-family:Segoe UI Light;">~Welcome to the <span class="pink">Mixed Up</span> Vocaloid Music~</h1>
-            <h2 class="voca">Miku Hatsune | Rin and Len Kagamine | Luka Megurine | Kaito shion | Meiko</h2>
-              <button class="btn btn-red"><h3>Keep in Touch</h3></button>
-        <h2 class="voca"><i class="fa fa-facebook">  </i>  Facebook  <i class="fa fa-twitter">  </i> Twitter <i class="fa fa-instagram">  </i>  Instagram  <i class="fa fa-google-plus">  </i> Google+  </h2>
+  					<h1 class="faa" >~Welcome to the Mixed Up Vocaloid Music~</h1>
+            <h2 class="voca">Miku Hatsune | Rin and Len Kagamine | Luka Megurine | Kaito Shion | Meiko Sakine</h2>
+              <button class="btn btn-red" onclick="showAlert()"><h3>Listen Now!</h3></button>
+        <h2 class="voca pointer"><i class="fa fa-facebook fb">  </i><a href="https://www.facebook.com" > Facebook </a>| 
+          <i class="fa fa-twitter teal">  </i> <a href="https://www.twitter.com" > Twitter </a>| 
+          <i class="fa fa-instagram ig">  </i> <a href="https://www.instagram.com" > Instagram </a>| 
+          <i class="fa fa-google-plus color">  </i><a href="https://www.googleplus.com" > Google+ </a> </h2>
   				</div>
   			</section>
 </main>
 <div class="row news">
-  <h1 class="centerized">Bring the Party in you <button class="bbtn">Get in Touch</button></h1>
+  <h1 class="centerized margin">Music is the language of the soul | Vocaloid Fan Page 
+    <button class="bbtn right"onclick="showAlert()">Invite a friend!</button></h1>
 
     <div class="col third">
-      <article class="">
+      <article class="card card-deck">
         <img src="./img/d.jpg" alt="">
-            <h1 style="text-align:center;"><i class="fa fa-heart"></i></h1>
-        <h1 style="text-align:center;">Valentine Special</h1>
+            <h1 style="text-align:center;"><big><i class="fa fa-heart" style="color:#dc3545"></i></big></h1>
+        <h1 style="text-align:center; color:#dc3545;" >Valentine Special</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="" class="card-link primary4 txt" onclick="showAlert()">Let's Go</a>
       </article>
     </div>
     <div class="col third">
-      <article class="">
+      <article class="card card-deck">
         <img src="./img/ddd.jpg" alt="">
-            <h1 style="text-align:center;"><i class="fa fa-music"></i></h1>
-        <h1 style="text-align:center;">Songs</h1>
+            <h1 style="text-align:center;"><big><i class="fa fa-music" style="color:#6f42c1"></i></big></i></h1>
+        <h1 style="text-align:center; color:#6f42c1">Songs</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="" class="card-link primary3 txt"onclick="showAlert()">Listen</a>
       </article>
         </div>
     <div class="col third">
-      <article class="">
+      <article class="card card-deck">
         <img src="./img/dd.jpg" alt="">
-        <h1 style="text-align:center;"><i class="fa fa-dropbox"></i></h1>
-        <h1 style="text-align:center;">Collaboration</h1>
+        <h1 style="text-align:center;"><big><i class="fa fa-dropbox" style="color:#fd7e14"></i></big></h1>
+        <h1 style="text-align:center; color:#fd7e14 ">Collaboration</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="" class="card-link primary txt"onclick="showAlert()">Learn More</a>
       </article>
     </div>
-
 </div>
 <div class="row news">
-
-
     <div class="col third">
-      <article class="">
+      <article class="card card-deck">
         <img src="./img/d.jpg" alt="">
-            <h1 style="text-align:center;"><i class="fa fa-download"></i></h1>
-        <h1 style="text-align:center;">Download PVs</h1>
+            <h1 style="text-align:center;"><big><i class="fa fa-download" style="color:#28a745"></i></big></h1>
+        <h1 style="text-align:center; color:#28a745">Download PVs</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="" class="card-link primary5 txt"onclick="showAlert()">Start Downloading</a>
       </article>
     </div>
     <div class="col third">
-      <article class="">
+      <article class="card card-deck">
         <img src="./img/ddd.jpg" alt="">
-            <h1 style="text-align:center;"><i class="fa fa-microphone"></i></h1>
-        <h1 style="text-align:center;">Compose a song</h1>
+            <h1 style="text-align:center;"><big><i class="fa fa-microphone" style="color:#343a40"></i></big></h1>
+        <h1 style="text-align:center; color:#343a40">Compose a song</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="" class="card-link primary4 txt"onclick="showAlert()">Compose</a>
       </article>
         </div>
     <div class="col third">
-      <article class="">
+      <article class="card card-deck">
         <img src="./img/dd.jpg" alt="">
-        <h1 style="text-align:center;"><i class="fa fa-smile-o"></i></h1>
-        <h1 style="text-align:center;">Memorable Extras</h1>
+        <h1 style="text-align:center;"><big><i class="fa fa-smile-o" style="color:#ffc107"></i></big></h1>
+        <h1 style="text-align:center; color:#ffc107">Memorable Extras</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="" class="card-link primary3 txt"onclick="showAlert()">See More</a>
       </article>
     </div>
-
 </div>
-
     </div>
 <footer>
-  <p>(C)Crypton Future Media | Arwin Chua </p>
+  <p>&copy; Crypton Future Media | Arwin Chua </p>
 </footer>
+
+<script type="text/javascript">
+  function showAlert(){
+      var txt = "Oops! This part is still on development. Thanks for visiting my site! Please provide feedbacks on my facebook account for further improvements.\n-Arwin Chua, Developer";
+      alert(txt);
+      }
+  </script>
+
   </body>
-
-
 </html>
